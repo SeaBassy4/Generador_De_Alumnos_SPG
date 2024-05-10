@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+    </style>
   <script>
     var alumnos = []; // Array para almacenar la información de los alumnos
 
@@ -200,11 +222,22 @@ const nombres2 = [
   </script>
 </head>
 <body>
+    <header>
+        <h1>Generador Alumnos</h1>
+    </header>
+    <div class="container">
+        <p>Ingresa el Numero de Usuarios.</p>
+    </div>
+    <div id="salida"></div>
+<input type="number" id="num" placeholder="Numero de entradas" value="5">
+</body>
+</html>
+  <div id="salida"> <br> </div>
+  
   <input type="button" value="Generar alumnos" onclick="generar()">
   <input type="button" value="Generar SQL" onclick="generarSQL()">
   <input type="button" value="Generar CSV" onclick="generarCSV()">
   <input type="button" value="Generar JSON" onclick="generarJSON()">
-  <input type="number" id="num" placeholder="Numero de entradas" value="5">
-  <div id="salida"></div>
+
 </body>
 </html>
